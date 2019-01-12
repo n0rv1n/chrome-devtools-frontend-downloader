@@ -1,0 +1,9 @@
+.DS_Store1
+.cache
+node_modules/
+zip/
+downLoad/
+
+yarn.lock
+yarn-error.log
+package-lock.json

@@ -1,0 +1,25 @@
+{
+  "name": "chrome-devtools-frontend-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "author": "Norvin",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "https-proxy-agent": "^2.2.1",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
