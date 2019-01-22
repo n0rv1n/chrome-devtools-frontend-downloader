@@ -3,8 +3,11 @@ const fs = require("fs");
 const archiver = require("archiver");
 // const debuggerID = process.argv.splice(2)[0].replace("@", "");
 const modulesPath = path.resolve(__dirname, "downLoad");
-const outputZipPath = path.resolve(__dirname, "zip", "debuggerModules.zip");
-
+const outputPath = path.resolve(__dirname, "zip");
+const outputZipPath = path.resolve(outputPath, "debuggerModules.zip");
+if (!fs.existsSync(outputPath)) {
+  fs.mkdirSync(outputPath);
+}
 const output = fs.createWriteStream(outputZipPath);
 const archive = archiver("zip", {
   zlib: { level: 9 }
