@@ -1,4 +1,4 @@
-const enableProxy = true; //是否使用代理
+const enableProxy = false; //是否使用代理
 const proxy = "http://127.0.0.1:1080"; //代理地址
 const path = require("path");
 const fs = require("fs");
