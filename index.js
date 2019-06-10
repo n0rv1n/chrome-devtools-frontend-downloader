@@ -18,9 +18,9 @@ function fetch(url, opt = {}) {
  * 获取文件列表
  * @returns
  */
-async function getFileList() {
+function getFileList() {
   console.log("正在获取文件列表...");
-  return await fetch(fileListURL).then(res => {
+  return fetch(fileListURL).then(res => {
     console.log("文件列表获取完成");
     return res.text();
   });
