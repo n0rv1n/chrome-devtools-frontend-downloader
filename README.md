@@ -11,4 +11,5 @@ node index.js [packageId]
 node zip.js
 ```
 ## notice:
-默认使用本地1080端口的代理，如需变更端口或禁用代理，可编辑index.js实现
+- 默认不使用代理，如需使用，可修改index.js实现
+- 调试工具包仅适用于**Chrome Inspect 离线调试工具** [https://pan.baidu.com/s/1YRUlR1qUFvh-TkvJCvRNFw](https://pan.baidu.com/s/1YRUlR1qUFvh-TkvJCvRNFw) 
